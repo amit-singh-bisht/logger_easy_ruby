@@ -12,6 +12,9 @@ Style/StringLiteralsInInterpolation:
 Style/OptionalBooleanParameter:
   Enabled: false
 
+Style/CommentedKeyword:
+  Enabled: false
+
 Layout/LineLength:
   Max: 120
 
