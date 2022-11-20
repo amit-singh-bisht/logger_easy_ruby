@@ -7,7 +7,7 @@ module LoggerEasy
 
   attr_accessor :log_file_name
 
-  def initialize(log_file_name = 'logger_easy.log')
+  def initialize_log_easy(log_file_name = 'logger_easy.log')
     @log_file_name = log_file_name
     @logger = Logger.new(log_file_name)
   end
