@@ -26,7 +26,8 @@ If bundler is not being used to manage dependencies, install the gem by executin
 
 Initialize the module by passing a file name where you want the logs to be appended, if no file_name is passed in parameter, it will create a file with name as `logger_easy.log` in the current working directory
 ```ruby
-def initialize(log_file_name = 'logger_easy.log')
+# below method will initialize logger
+def logger_easy(log_file_name = 'logger_easy.log')
   @log_file_name = log_file_name
   @logger = Logger.new(log_file_name)
 end
@@ -34,6 +35,7 @@ end
 
 Log info in file
 ```ruby
+# below method will add log info to file
 def log_info(message)
   @logger ||= Logger.new(@log_file_name)
   @logger.info(message)
@@ -42,6 +44,7 @@ end
 
 Log debug in file
 ```ruby
+# below method will add debug info to file
 def log_debug(message)
   @logger ||= Logger.new(@log_file_name)
   @logger.debug(message)
@@ -50,6 +53,7 @@ end
 
 Log error in file
 ```ruby
+# below method will add error info to file
 def log_error(message)
   @logger ||= Logger.new(@log_file_name)
   @logger.error(message)
