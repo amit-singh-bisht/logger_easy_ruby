@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors = ['amit-singh-bisht']
   spec.email = ['bishtamitsingh98@gmail.com']
 
-  spec.summary = 'LoggerEasy provides you a way to easily log your activity. https://bit.ly/ld_doc'
-  spec.description = 'LoggerEasy provides you a way to easily log your activity. https://bit.ly/ld_doc'
+  spec.summary = 'LoggerEasy provides you a way to easily log your activity. https://bit.ly/logger_easy'
+  spec.description = 'LoggerEasy provides you a way to easily log your activity. https://bit.ly/logger_easy'
   spec.homepage = 'https://github.com/amit-singh-bisht/logger_easy_ruby'
   spec.license = 'MIT'
   spec.required_ruby_version = '>= 2.5.0'
