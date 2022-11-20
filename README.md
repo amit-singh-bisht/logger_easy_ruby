@@ -27,6 +27,12 @@ If bundler is not being used to manage dependencies, install the gem by executin
 `include LoggerEasy`
 
 Initialize the module by passing a file name where you want the logs to be appended, if no file_name is passed in parameter, it will create a file with name as `logger_easy.log` in the current working directory
+
+<pre>
+DEBUG < INFO < WARN < ERROR < FATAL < UNKNOWN
+</pre>
+
+**initialize logger**
 ```ruby
 # below method will initialize logger
 def logger_easy(log_file_name = 'logger_easy.log')
@@ -35,30 +41,66 @@ def logger_easy(log_file_name = 'logger_easy.log')
 end
 ```
 
-Log info in file
+**debug**
 ```ruby
-# below method will add log info to file
-def log_info(message)
-  @logger ||= Logger.new(@log_file_name)
-  @logger.info(message)
-end
-```
-
-Log debug in file
-```ruby
-# below method will add debug info to file
+# below method will log debug text to file
 def log_debug(message)
   @logger ||= Logger.new(@log_file_name)
   @logger.debug(message)
 end
 ```
 
-Log error in file
+**info**
 ```ruby
-# below method will add error info to file
+# below method will log info text to file
+def log_info(message)
+  @logger ||= Logger.new(@log_file_name)
+  @logger.info(message)
+end
+```
+
+**warn**
+```ruby
+# below method will log warn text to file
+def log_warn(message)
+  @logger ||= Logger.new(@log_file_name)
+  @logger.warn(message)
+end
+```
+
+**error**
+```ruby
+# below method will log error text to file
 def log_error(message)
   @logger ||= Logger.new(@log_file_name)
   @logger.error(message)
+end
+```
+
+**fatal**
+```ruby
+# below method will log fatal text to file
+def log_fatal(message)
+  @logger ||= Logger.new(@log_file_name)
+  @logger.fatal(message)
+end
+```
+
+**unknown**
+```ruby
+# below method will log unknown text to file
+def log_unknown(message)
+  @logger ||= Logger.new(@log_file_name)
+  @logger.unknown(message)
+end
+```
+
+**close logger**
+```ruby
+# below method will close logger
+def logger_easy_close
+  @logger ||= Logger.new(@log_file_name)
+  @logger.close
 end
 ```
 
