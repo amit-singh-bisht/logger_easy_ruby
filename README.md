@@ -24,6 +24,8 @@ If bundler is not being used to manage dependencies, install the gem by executin
 
 ## Usage
 
+`include LoggerEasy`
+
 Initialize the module by passing a file name where you want the logs to be appended, if no file_name is passed in parameter, it will create a file with name as `logger_easy.log` in the current working directory
 ```ruby
 # below method will initialize logger
